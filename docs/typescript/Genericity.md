@@ -48,7 +48,7 @@ function identity<T>(arg: T): T {
 - V（Value）：表示对象中的值类型；
 - E（Element）：表示元素类型。
 
-来张图片帮助你理解 ![image.png](知识积累.assets/ba87e7a8921144faa4e8dd7dc8e92916tplv-k3u1fbpfcp-watermark.awebp)
+来张图片帮助你理解 ![image.png](../imgs/image-20220513125245501.png)
 
 其实并不是只能定义一个类型变量，我们可以引入希望定义的任何数量的类型变量。比如我们引入一个新的类型变量 `U`，用于扩展我们定义的 `identity` 函数：
 
@@ -60,7 +60,7 @@ function identity <T, U>(value: T, message: U) : T {
 console.log(identity<Number, string>(68, "Semlinker"));
 ```
 
-![image.png](知识积累.assets/dc2bcfb0e8414282b606705c6a0385e0tplv-k3u1fbpfcp-watermark.awebp)
+![image.png](../imgs/image-20220513125304427.png)
 
 除了为类型变量显式设定值之外，一种更常见的做法是使编译器自动选择这些类型，从而使代码更简洁。我们可以完全省略尖括号，比如：
 
